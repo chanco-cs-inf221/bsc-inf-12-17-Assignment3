@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+    </head>
+    <body>
+        <h1 align="center" >My Simple Calculator</h1>
+        <div class="main container">
+            <form name="myForm">
+                <input type="text" name="textview" disabled/>
+            
+                <table>
+                    
+                        <tr>
+                        <!-- <td> <input type="button" class="button black symbol"value="&radic;"onclick="insertOp('(')"></td> -->
+                        <td> <input type="button" class="button blue symbol"value="&divide;" onclick="insertOp('/')"></td>
+                        <td> <input type="button" class="button blue symbol"value="&percnt;" onclick="insertOp('%')"></td>
+                        <td> <input type="button" class="button blue symbol"value="&plus;" onclick="insertOp('+')"></td>
+                        <td> <input type="button" class="button black symbol"value="c"onclick="clean()"></td>
+
+                               </tr>
+
+                        
+                        <tr>
+                         <td> <input type="button" class="button gray number"value="7"onclick="insertNum(7)"></td>
+                         <td> <input type="button"class="button blue number"value="8" onclick="insertNum(8)"></td>
+                         <td> <input type="button" class="button blue number"value="9" onclick="insertNum(9)"></td>
+                         <td>  <input type="button" class="button blue symbol"value="&times;" onclick="insertOp('*')"></td>
+                        </tr>
+                        <tr>
+                         <td> <input type="button" class="button gray number"value="4"onclick="insertNum(4)"></td>
+                         <td> <input type="button" class="button blue number"value="5" onclick="insertNum(5)"></td>
+                         <td> <input type="button" class="button blue number"value="6" onclick="insertNum(6)"></td>
+                         <td> <input type="button" class="button blue symbol"value="&minus;" onclick="insertOp('-')"></td>
+                
+                        </tr>
+                         <tr>
+                        <td> <input type="button" class="button gray number"value="1"onclick="insertNum(1)"></td>
+                        <td> <input type="button" class="button blue number"value="2" onclick="insertNum(2)"></td>
+                        <td> <input type="button" class="button blue number"value="3" onclick="insertNum(3)"></td> 
+                        <td> <input type="button" class="button blue symbol"value="&equals;" onclick="equalTo()"></td>
+
+                         <!-- <td><input type="button" class="button blue symbol" value=")" onclick="insertOp(')')"></td>                              </tr> -->
+                        <tr>
+                        <td> <input type="button" class="button black symbol"value="" style="background-color:gray; display: none"></td>
+                        <td> <input type="button" class="button blue number"value="0" onclick="insertNum(0)"></td>
+                        <td> <input type="button" class="button blue symbol"value="." onclick="insertDec()"></td>
+                         </tr>
+
+
+                               
+                               
+
+                </table>
+
+
+            
+
+
+       
+    </form>
+</div>
+   
+ <script type="text/javascript" src="calc.js"></script>
+    </body>
+
+
+
+
+</html>
